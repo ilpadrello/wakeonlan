@@ -1,0 +1,46 @@
+{
+  "name": "wakeonlan",
+  "version": "1.0.0",
+  "description": "Personal Web interface to handle WOL of my private network",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -Rf dist; ./node_modules/typescript/bin/tsc -w -p .",
+    "start": "NODE_ENV=development node dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Simone Panebianco",
+  "license": "ISC",
+  "dependencies": {
+    "@types/uuid": "^10.0.0",
+    "axios": "^1.7.9",
+    "cluster": "^0.7.7",
+    "compression": "^1.7.5",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "figlet": "^1.8.0",
+    "fs-extra": "^11.3.0",
+    "helmet": "^8.0.0",
+    "helmet-csp": "^4.0.0",
+    "knex": "^3.1.0",
+    "mysql2": "^3.12.0",
+    "typescript": "^5.7.3",
+    "uuid": "^11.0.5",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/compression": "*",
+    "@types/cookie-parser": "*",
+    "@types/cors": "*",
+    "@types/express": "*",
+    "@types/figlet": "*",
+    "@types/fs-extra": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "eslint": "*",
+    "eslint-plugin-import": "*",
+    "nodemon": "*"
+  }
+}
